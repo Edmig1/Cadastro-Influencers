@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem De Influencers</title>
+    <link rel="stylesheet" href="static/home.css"/>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Listagem De Influencers</h1>
+        <a class="btn" href="http://127.0.0.1:5000/cadastro">Cadastrar Influenciadores</a>
+    </header>
+    <main>
+        <div class="card">
+            {% for i in Influenciadores %}
+            <div class="pokemon-card">
+                <div class="div-img">
+                    <img src='{{ i.imagem }}' alt="">
+                </div>
+                <div class="div-info">
+                <h2>{{ i.nome }}</h2>
+                <p>{{ i.plataforma }}</p>
+                <p>{{ i.seguidores }}</p>
+                <p>{{ i.interesse }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
