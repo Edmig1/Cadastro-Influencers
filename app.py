@@ -25,7 +25,7 @@ def criar():
     seguidores = request.form['seguidores']
     interesse = request.form['interesse']
     imagem = request.form['img']
-    obj = influencer(nome,plataforma,seguidores,interesse,imagem)
+    obj = influencer(nome,plataforma,seguidores,interesse,imagem )
     lista.append(obj)
     return redirect('/')
 lista = []

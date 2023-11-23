@@ -14,8 +14,8 @@
         <div class="card">
             {% for i in Influenciadores %}
             <div class="pokemon-card">
-                <div class="div-img">
-                    <img src='{{ i.imagem }}' alt="">
+                <div class="div-img" style="background-image: url('{{ i.imagem }}'); background-position: center; background-size: cover">
+
                 </div>
                 <div class="div-info">
                 <h2>{{ i.nome }}</h2>
@@ -23,8 +23,10 @@
                 <p>{{ i.seguidores }}</p>
                 <p>{{ i.interesse }}</p>
                 </div>
+            </div>
             {% endfor %}
         </div>
     </main>
+
 </body>
 </html>
