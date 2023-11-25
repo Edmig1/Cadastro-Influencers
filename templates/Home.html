@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Listagem De Influencers</title>
     <link rel="stylesheet" href="static/home.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     <header>
@@ -13,20 +15,19 @@
     <main>
         <div class="card">
             {% for i in Influenciadores %}
-            <div class="pokemon-card">
+            <div class="pokemon-card animate__animated animate__backInDown animate__fast">
                 <div class="div-img" style="background-image: url('{{ i.imagem }}'); background-position: center; background-size: cover">
 
                 </div>
                 <div class="div-info">
-                <h2>{{ i.nome }}</h2>
-                <p>{{ i.plataforma }}</p>
-                <p>{{ i.seguidores }}</p>
-                <p>{{ i.interesse }}</p>
+                <h2>Nome: {{ i.nome }}</h2>
+                <p>Plataforma: {{ i.plataforma }}</p>
+                <p>Seguidores: {{ i.seguidores }}</p>
+                <p>Interesse: {{ i.interesse }}</p>
                 </div>
             </div>
             {% endfor %}
         </div>
     </main>
-
 </body>
 </html>

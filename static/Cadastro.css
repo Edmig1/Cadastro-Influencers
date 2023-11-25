@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 main{
-    min-height: 85vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,8 @@ main{
 }
 header{
     height: 10vh;
+    z-index: 2;
+    position: relative;
     background-color: crimson;
     text-align:center;
     display: flex;
@@ -42,8 +44,6 @@ header{
     border-radius: 10px / 50px;
 }
 form{
-    animation-name: entrada;
-    animation-duration: 1s;
     width: 40%;
 }
 fieldset{
