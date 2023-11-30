@@ -25,6 +25,8 @@
                 <p>Seguidores: {{ i.seguidores }}</p>
                 <p>Interesse: {{ i.interesse }}</p>
                 </div>
+                    <a class="excluir" href="excluir/{{ i.cont }}"> <span class="excluir-span">Excluir</span> <span class="lixo"><i class="fa-solid fa-trash-can" style="color: #ffffff;"></i></span></a>
+                    <a class="editar" href="editar/{{ i.cont }}"> <span class="editar-span">Editar</span> <span class="caneta"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></span></a>
             </div>
             {% endfor %}
         </div>
